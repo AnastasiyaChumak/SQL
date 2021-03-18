@@ -6,7 +6,7 @@ from STUDENTS S
 where not exists
 	(select 1
 	from UNIVERSITIES
-	where (RATING between 488 and 571) and ID = S.ID)
+	where (RATING between 488 and 571) and ID = S.UNIV_ID)
 
 
 -- 2. Напишите запрос с EXISTS, выбирающий всех студентов, для которых в том же городе, 
